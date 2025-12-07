@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"week1\startup_stm32f103xb.o"
+"week1\main.o"
+"week1\stm32f1xx_it.o"
+"week1\stm32f1xx_hal_msp.o"
+"week1\stm32f1xx_hal_gpio_ex.o"
+"week1\stm32f1xx_hal.o"
+"week1\stm32f1xx_hal_rcc.o"
+"week1\stm32f1xx_hal_rcc_ex.o"
+"week1\stm32f1xx_hal_gpio.o"
+"week1\stm32f1xx_hal_dma.o"
+"week1\stm32f1xx_hal_cortex.o"
+"week1\stm32f1xx_hal_pwr.o"
+"week1\stm32f1xx_hal_flash.o"
+"week1\stm32f1xx_hal_flash_ex.o"
+"week1\stm32f1xx_hal_exti.o"
+"week1\system_stm32f1xx.o"
+--strict --scatter "week1\week1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "week1.map" -o week1\week1.axf
